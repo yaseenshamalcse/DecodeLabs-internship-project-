@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow Dashboard</title>
+<link rel="stylesheet" href="Style.css">
+<script src="javascript.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>TaskFlow</h2>
+
+        <ul>
+            <li>🏠 Dashboard</li>
+            <li>📋 Tasks</li>
+            <li>📊 Analytics</li>
+            <li>⚙ Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header>
+            <h1>Task Dashboard</h1>
+            <button id="themeBtn">🌙 Theme</button>
+        </header>
+
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </section>
+
+        <section class="task-form">
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task">
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <ul id="taskList"></ul>
+
+    </main>
+
+</div>
+
+</body>
+</html>
